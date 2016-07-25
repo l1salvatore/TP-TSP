@@ -8,6 +8,14 @@ function [tour, valor] = vecino_mas_cercano_mejorado(A)
 
 [nodos, zzz] = size(A); // en "nodos" se guarda la cantidad de vértices de la instancia
 
-// *** ESCRIBA EL CODIGO AQUI! ***
+valor = %inf
+tour = zeros(nodos,1)
+for i=1:nodos
+    [tour_i,valor_i] = vecino_mas_cercano(A,i)
+    if valor_i <= valor then
+        valor = valor_i
+        tour = tour_i
+    end
+end
 
 endfunction
