@@ -1,4 +1,4 @@
-chdir(pwd()+'/TPTSP/')
+chdir(pwd()+'/TP-TSP/')
 // Herramientas desarrolladas por la cátedra
 exec('lee_TSP.sci',-1);
 exec('vecino_mas_cercano.sci',-1);
