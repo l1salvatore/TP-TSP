@@ -47,7 +47,7 @@ for longitud=2:(nodos-1)
     end
 
     // Elegimos el próximo vértice "v" cuyo "w" es el MAS CERCANO
-    minima_dist = -%inf;
+    minima_dist = %inf;
     minimo_v = -1;
     for v=vertices_permitidos
         if (minima_dist > A(v,wvector(v))) then
