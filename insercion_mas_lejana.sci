@@ -72,7 +72,7 @@ for longitud=2:(nodos-1)
         end
     end
 
-    // Insertamos el (maxímo) "v" en la posición (mínimo) "j", en el tour; luego prohibimos dicho vértice.
+    // Insertamos el (maxímo) "v" en la posición (mínimo) "j+1", en el tour; luego prohibimos dicho vértice.
     tour = [tour(1:minimo_j) maximo_v tour(minimo_j+1:$)];
     vertices_permitidos(find(vertices_permitidos==maximo_v)) = [];
 end
